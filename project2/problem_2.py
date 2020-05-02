@@ -40,7 +40,7 @@ test_case1()
 
 # test case 2
 def test_case2():
-print(find_files(".c", "./fakedir"))
+    print(find_files(".c", "./fakedir"))
 
 test_case2()
 # returns:
