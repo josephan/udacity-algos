@@ -8,6 +8,6 @@ Also there are two loops over the given input. One loop to create a dictionary o
 
 The space complexity of the `huffman_encoding` is `O(n)` as we create a hash of character frequency and a string of encoded data. The size of both data types are dependent on the size of the input.
 
-The time complexity of `huffman_decoding` function is `O(n)` because the tree needs to be traversed for the size of the encoded data input.
+The time complexity of `huffman_decoding` function is `O(n log n)` because for every encoded character in the input the tree needs to be traversed to find the decoded character.
 
 The space complexity of `huffman_decoding` function is `O(n)` because we create a new decoded string dependent on the size of the input.
