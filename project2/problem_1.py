@@ -16,6 +16,9 @@ class LRU_Cache(object):
             return -1
 
     def set(self, key, value):
+        if self.capacity == 0:
+            return
+
         if key in self.cache:
             node = self.cache[key]
             node.value = value
@@ -147,3 +150,16 @@ test_case3()
 # expects to print the following:
 # 1
 # 123
+
+# test cache with 0 capacity
+def test_case4():
+    c = LRU_Cache(0)
+    c.set(1, "abc")
+    print(c.cache_count)
+    print(c.get(1))
+
+print("running test case 3")
+test_case4()
+# expects to print the following:
+# 0
+# -1

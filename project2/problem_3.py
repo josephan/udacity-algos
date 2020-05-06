@@ -207,10 +207,10 @@ test3()
 # The size of the encoded data is: 36
 # 
 # The content of the encoded data is: 0011100101010100110100111110011000000101000000010101010001100010111110
-
-The size of the decoded data is: 69
-
-The content of the encoded data is: The bird is the word
+#
+# The size of the decoded data is: 69
+#
+# The content of the encoded data is: The bird is the word
 
 def test4():
     print("\nRUNNING TEST 4:")

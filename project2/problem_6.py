@@ -76,7 +76,7 @@ def intersection(llist_1, llist_2):
 
 
 # Test case 1
-
+# intersection and union of numbers
 linked_list_1 = LinkedList()
 linked_list_2 = LinkedList()
 
@@ -91,14 +91,17 @@ for i in element_2:
 
 print (union(linked_list_1,linked_list_2))
 print (intersection(linked_list_1,linked_list_2))
+# Should ouput:
+# 3 -> 2 -> 4 -> 35 -> 6 -> 65 -> 21 -> 32 -> 9 -> 1 -> 11 -> 
+# 4 -> 6 -> 21 ->
 
 # Test case 2
-
+# test empty list
 linked_list_3 = LinkedList()
 linked_list_4 = LinkedList()
 
-element_1 = [3,2,4,35,6,65,6,4,3,23]
-element_2 = [1,7,8,9,11,21,1]
+element_1 = []
+element_2 = []
 
 for i in element_1:
     linked_list_3.append(i)
@@ -108,3 +111,23 @@ for i in element_2:
 
 print (union(linked_list_3,linked_list_4))
 print (intersection(linked_list_3,linked_list_4))
+# Should ouput two empty lines
+
+# Test case 3
+# test non numerical values
+linked_list_3 = LinkedList()
+linked_list_4 = LinkedList()
+
+element_1 = [None]
+element_2 = ['string']
+
+for i in element_1:
+    linked_list_3.append(i)
+
+for i in element_2:
+    linked_list_4.append(i)
+
+print (union(linked_list_3,linked_list_4))
+print (intersection(linked_list_3,linked_list_4))
+# should print empty line for unions
+# should print None -> string ->  for intersection

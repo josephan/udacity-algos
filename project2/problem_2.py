@@ -29,8 +29,8 @@ def find_files(suffix, path):
     else:
         return []
 
-# tested with directories from test files from Udacity (not zipped with solution)
 # test case 1
+# test directory and subdirectories containing c files
 def test_case1():
     print(find_files(".c", "./testdir"))
 
@@ -39,6 +39,7 @@ test_case1()
 # ['./testdir/subdir5/a.c', './testdir/subdir1/a.c', './testdir/t1.c', './testdir/subdir3/subsubdir1/b.c']
 
 # test case 2
+# for a directory that does not exist
 def test_case2():
     print(find_files(".c", "./fakedir"))
 
@@ -47,6 +48,7 @@ test_case2()
 # []
 
 # test case 3
+# test directory without c files
 def test_case3():
     print(find_files(".c", "./dir_without_c_files"))
 

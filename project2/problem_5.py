@@ -68,8 +68,8 @@ test2()
 # )
 # ------------------
 
-# test single block blockchain
-def test2():
+# test long block blockchain
+def test3():
     bc = Blockchain()
     bc.add_block('one')
     bc.add_block('two')
@@ -79,7 +79,7 @@ def test2():
     bc.add_block('six')
     print(bc)
 
-test2()
+test3()
 # should six blocks
 # Block(
 #   hash: c44a9404e8bf774c3b44babb2b9e0ffd2fb38b79e1b9de4a5fe5d7330af83dd6

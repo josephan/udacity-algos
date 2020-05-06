@@ -64,7 +64,7 @@ test1()
 
 # test if a fake user is not in group
 def test2():
-    print(cache.is_user_in_group("", sub_child))
+    print(cache.is_user_in_group("fake-user", sub_child))
 
 test2()
 # Should return False
@@ -72,7 +72,7 @@ test2()
 
 # test if a real user is not in fake group
 def test3():
-    print(cache.is_user_in_group(sub_child_user, ""))
+    print(cache.is_user_in_group(sub_child_user, "fake-group"))
 
 test3()
 # Should return False
