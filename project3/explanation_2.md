@@ -6,4 +6,4 @@ Given a rotated array, if we split the array in half, there will always be a hal
 
 Because the input is always cut in half for each recursive call, the time complexity is `O(log n)`.
 
-Also the recursive function doesn't use any other data structures and operate on the input list in place, so the space complexity is `O(1)`.
+The solution doesn't use up memory dependant on the size of the input. However the quicksort algorithm sorts the array in place but because it uses recursion it takes up memory in the stack. The space complexity of the algorithm is `O(log n)`.
